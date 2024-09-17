@@ -9,14 +9,29 @@
     "48": "diving bunny neutral.png",
     "128": "diving bunny neutral.png"
   },
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "permissions": [
+    "tabs",
     "sidePanel",
-    "tabs"
+    "activeTab",
+    "scripting"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "settingsInit.js"
   },
   "side_panel": {
     "default_path": "analysisSidepanel.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "tallying.js"
+      ]
+    }
+  ]
 }

@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-    #tabInfo {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
-</style>
+<head>
+    <style>
+        .topic {
+            font-size: xx-large;
+        }
+
+        .floating-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .fieldNameDiv {
+            font-size: x-large;
+            text-align: center;
+        }
+
+        .fieldNameDiv p {
+            padding-inline: 10px;
+            margin: 0px;
+
+        }
+
+        .fieldValueDiv {
+            display: flex;
+            font-size: medium;
+            overflow-x: auto;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .fieldValueDiv p {
+            padding-inline: 10px;
+            margin: 0px;
+            border-right: 1px solid black;
+        }
+    </style>
+
+    <script src="analysisSidepanel.js" defer></script>
+</head>
 
 <body>
-    <script src="analysisSidepanel.js"></script>
-
-    <div id="tabInfo">
-        <span>Open Tab: </span><span id="tab-title">___</span>
+    <div class="floating-row topic">
+        <p>Topic:</p>
+        <p id="topic">Chess</p>
     </div>
+    <hr>
+    <br>
+    <div class="floating-row fieldNameDiv">
+        <p>Recurring Words:</p>
+        <div class="fieldValueDiv" id="recurringWords">
+            <p>King</p>
+            <p>Queen</p>
+            <p>Rook</p>
+            <p>Bishop</p>
+            <p>Knight</p>
+            <p>Pawn</p>
+            <p>Check</p>
+            <p>Checkmate</p>
+        </div>
+    </div>
+    <br>
+    <hr>
 </body>
 
 </html>
