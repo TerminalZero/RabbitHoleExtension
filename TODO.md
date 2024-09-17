@@ -1,0 +1,4 @@
+- [x] Create readme
+- [x] Create project drafts
+- [ ] Add sidebar that displays the ***parameters*** as seen in  [README](readme.md)'s **"Processing"** section
+- [ ] Write **Relevancy Grading** Draft

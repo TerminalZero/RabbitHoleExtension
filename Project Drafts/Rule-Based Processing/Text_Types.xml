@@ -1,0 +1,48 @@
+
+<Text_Types>
+    <Declarative>
+        <Linking-Verbs>
+            "The function [is] expected to write to the value..."
+            "These may be hard for people whose first language [is] not English..."
+            "it [is] used to integrate the parameter and the value..."
+        </Linking-Verbs>
+
+        <3rd-Person-Singular>
+            "[Defines] a graphical effect to the area behind an element"
+            "[Specifies] the size of the element's content area"
+            "[Returns] the value of the specified property"
+        </3rd-Person-Singular>
+    </Declarative>
+
+    <Explanatory>
+        <To-Infinitives>
+            "The function is expected [to write] to the value..."
+            "These may be hard [to understand] for people whose..."
+            "it us used [to integrate] the parameter and..."
+        </To-Infinitives>
+        
+        <So-That>
+            "The function is expected to write to that value [so that]..."
+            "Use proper grammar [so that] it can be understood by everyone..."
+            "it integrates the parameter with the value [so that]..."
+        </So-That>
+    </Explanatory>
+
+    <Imperative>
+        <Verb-First>
+            "[Write] a function that returns the sum of two numbers"
+            "[Create] a function that returns the product of two numbers"
+            "[Design] a function that returns the difference of two numbers"
+        </Verb-First>
+    </Imperative>
+
+    <Subjective>
+        <Pronouns/>
+        <Exclamatory/>
+        <Interrogative/>
+
+        <MoodWords>
+            "Dislike, Love, Hate, Happy, Sad, Upset, Excited, etc."
+        </MoodWords>
+    </Subjective>
+</Text_Types>

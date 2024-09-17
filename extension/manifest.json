@@ -1,0 +1,22 @@
+{
+  "name": "Rabbit Hole - Bookmark & Tab Organizer",
+  "description": "Advanced text analysis and visualization tool.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {},
+  "icons": {
+    "16": "diving bunny neutral.png",
+    "48": "diving bunny neutral.png",
+    "128": "diving bunny neutral.png"
+  },
+  "permissions": [
+    "sidePanel",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "analysisSidepanel.html"
+  }
+}

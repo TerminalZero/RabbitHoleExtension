@@ -1,0 +1,98 @@
+<Text-Types>
+    <Text_Declarative/>
+    <Text_Explanatory/>
+    <Text_Subjective/>
+</Text-Types>
+
+<Content-Types>
+    <Guide/>
+    <Reference/>
+    <Social/>
+    <Visual/>
+    <News/>
+    <Academic/>
+    <Reviews/>
+</Content-Types>
+
+<ContentIdentification>
+    <Guide>
+        <Required>
+            <Text_Explanatory/>
+        </Required>
+
+        <Maybe>
+            <Text_Declarative/>
+        </Maybe>
+    </Guide>
+
+    <Reference>
+        <Required>
+            <Text_Declarative/>
+        </Required>
+
+        <Not>
+            <Text_Subjective/>
+        </Not>
+    </Reference>
+
+    <Social>
+        <Required>
+            <Text_Subjective/>
+            <Username-Tags>
+                "@person"
+                "@company"
+            </Username-Tags>
+        </Required>
+    </Social>
+
+    <Visual>
+        <Required>
+            <ImgHtmlElement>
+                "<img src='img.jpg' alt='img' width='500' height='600'>"
+            </ImgHtmlElement>
+        </Required>
+
+        <Maybe>
+            <VideoHtmlElement>
+                "<video width='320' height='240' controls>"
+            </VideoHtmlElement>
+        </Maybe>
+    </Visual>
+    
+    <News>
+        <Required>
+            <Text_Declarative/>
+            
+            <TemporalWords>
+                "yesterday"
+                "today"
+                "tomorrow"
+            </TemporalWords>
+        </Required>
+    </News>
+
+    <Academic>
+        <Required>
+            <Text_Declarative/>
+            <Text_Explanatory/>
+
+            <Sections>
+                "Introduction"
+                "Abstract"
+                "Methodology"
+                "Results"
+                "Conclusion"
+            </Sections>
+        </Required>
+    </Academic>
+
+    <Reviews>
+        <Required>
+            <Text_Subjective/>
+        </Required>
+
+        <Maybe>
+            <Text_Explanatory/>
+        </Maybe>
+    </Reviews>
+</ContentIdentification>

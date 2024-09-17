@@ -1,0 +1,52 @@
+"Definitions:": {
+    "Temporal Proximity": {
+        "Definition": "The length of time it should take to complete the submitted goal",
+        "Values": "<Enum>: Minutes | Hours | Days | Weeks | Months | Years"
+    },
+    "Topic": {
+        "Definition": "The subject of the submitted goal",
+        "Values": "<String>: <Topic>"
+    },
+    "Explanatory": {
+        Definition: "Whether webpages on the submitted goal tend to be explanatory or concise",
+        "Values": "<Boolean>: True | False"
+    }
+    "Subjective": {
+        Definition: "Whether webpages on the submitted goal should be subjective or objective",
+        "Values": "<Boolean>: True | False"
+    },
+    "Physical-Meronyms": {
+        "Definition": "The physical components of the submitted goal",
+        "Values": "<Array> (2 max)"
+    },
+    "Abstract-Meronyms": {
+        "Definition": "The abstract components of the submitted goal",
+        "Values": "<Array> (2 max)"
+    },
+    "Hypernyms": {
+        "Definition": "The general category of the submitted goal",
+        "Values": "<Object>: <String>: <Category>, <Array> (2 max): <Category>"
+    },
+    "Hyponyms": {
+        "Definition": "The specific category of the submitted goal",
+        "Values": "<Array> (2 max)"
+    }
+}
+
+User: Learn how to play chess
+
+Assistant:
+{
+    "Temporal-Proximity": "Minutes",
+    "Topic": "Chess",
+    "Explanatory": true,
+    "Subjective": false,
+    "Physical-Meronyms": ["Board", "Pieces"],
+    "Abstract-Meronyms": ["Rules", "Strategy"],
+    "Hypernyms": 
+    {
+        "Board Game": ["Checkers", "Backgammon"],
+        "Strategy Game": ["Go", "Risk"]
+    },
+    "Hyponyms": ["Fischer Random Chess", "Blitz Chess"]
+}
