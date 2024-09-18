@@ -19,10 +19,10 @@
     "scripting"
   ],
   "background": {
-    "service_worker": "settingsInit.js"
+    "service_worker": "initBehavior.js"
   },
   "side_panel": {
-    "default_path": "analysisSidepanel.html"
+    "default_path": "analysisPanel.html"
   },
   "content_scripts": [
     {
